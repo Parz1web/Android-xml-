@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1b1b1b"
+        android:orientation="vertical"
+        tools:actionBarNavMode="tabs">
+
+        <!--WRAPPER-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close">
+
+            </ImageView>
+
+            <!--Main-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="122dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <!--Form-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="66dp">
+
+                <!--Login-->
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/person"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Телефон или e-mail"
+                        android:paddingLeft="15dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <!--Pass-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginVertical="11dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lock"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Пароль"
+                        android:paddingLeft="15dp">
+                    </EditText>
+                </LinearLayout>
+                <Button
+                    android:layout_width="316dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="#1F75FE"
+                    android:fontFamily="@font/semibold"
+                    android:textFontWeight="600"
+                    android:letterSpacing="0.02"
+                    android:lineHeight="24dp"
+                    android:textSize="18dp"
+                    android:text="Войти"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="86dp">
+                </Button>
+            </LinearLayout>
+            <!--быстрый доступ-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Быстрый доступ с"
+                    android:fontFamily="@font/regular"
+                    android:textFontWeight="400"
+                    android:textColor="#B1B1B1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="11dp">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fb"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginVertical="3dp">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/google"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginVertical="3dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/apple"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

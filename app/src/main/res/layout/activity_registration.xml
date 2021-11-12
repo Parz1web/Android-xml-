@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1b1b1b"
+        android:orientation="vertical"
+        tools:actionBarNavMode="tabs">
+
+        <!--WRAPPER-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close">
+
+            </ImageView>
+
+            <!--Main-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="21dp"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+
+            <!--Form-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="47dp">
+
+                <!--Login-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/person"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Имя"
+                        android:paddingLeft="15dp">
+
+                    </EditText>
+
+                </LinearLayout>
+
+                <!--Pass-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="11dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/person"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Фамилия"
+                        android:paddingLeft="15dp">
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="11dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/local_phone"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Телефон"
+                        android:paddingLeft="15dp">
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="56dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/lock"/>
+                    <EditText
+                        android:layout_width="275dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rounded"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Пароль"
+                        android:paddingLeft="15dp">
+                    </EditText>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="316dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/rounded"
+                    android:backgroundTint="#1F75FE"
+                    android:fontFamily="@font/semibold"
+                    android:textFontWeight="600"
+                    android:letterSpacing="0.02"
+                    android:lineHeight="24dp"
+                    android:textSize="18dp"
+                    android:text="Регистрация"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="119dp">
+                </Button>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
